@@ -1,10 +1,13 @@
+
+// assign all things to be styled later in the project
 const everything = document.querySelectorAll("*");
 const display = document.getElementById("display");
 const body = document.querySelector("body");
-const calculator = document.querySelector(".calculator")
+const calculator = document.querySelector(".calculator");
 const operators = document.querySelector(".operator-btn")
 const button = document.querySelectorAll("#keys button");
 
+// calculator functionality
 function appendToDisplay(balls) {
     display.value += balls;
 }
@@ -23,8 +26,11 @@ function calculate() {
     }
 
 }
+// styling based on active color mode
 
-function darkMode() {
+    // dark mode
+
+    function darkMode() {
 
     body.style.backgroundColor = "#2a2a2a";
     calculator.style.backgroundColor = "rgb(31, 31, 31)";
@@ -35,22 +41,26 @@ function darkMode() {
         btn.style.color = "white";
 
     })
-    display.style.backgroundColor = "#121212"
+    display.style.backgroundColor = "#121212";
     display.style.color = "white";
 
 }
 
+    // light mode
+
 function lightMode() {
     body.style.backgroundColor = "#BFBFBF";
     calculator.style.backgroundColor = "#D1D1D1";
-    display.style.backgroundColor = "#cbcbcb"
-    display.style.color = "black"
+    display.style.backgroundColor = "#cbcbcb";
+    display.style.color = "black";
 
     button.forEach(btn => {
-        btn.style.backgroundColor = "white"
-        btn.style.color = "black"
+        btn.style.backgroundColor = "white";
+        btn.style.color = "black";
     })   
 }
+
+    // reset to purple theme
 
 function currentMode() {
     everything.forEach( evr => {
