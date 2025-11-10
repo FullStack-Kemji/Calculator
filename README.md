@@ -1,2 +1,3 @@
 # Calculator
-Very basic calculator (no practical use)
+utilising my week 2 javascript knowledge
+no practical use
