@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6CCFF;
+}
+
+.calculator {
+    background-color: rgb(73, 2, 73);
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+#display {
+    background-color: orchid;
+    border: none;
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    font-weight:bold;
+    color: pink;
+}
+
+#keys button:not(.operator-btn) {
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: orchid;
+    color: pink;
+}
+
+#keys button:not(.operator-btn):hover {
+    background-color: darkorchid;
+}
+
+#keys button:active {
+    background-color:#E6CCFF;
+}
+
+.operator-btn {
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: darkorchid;
+    color: orchid;
+
+}
+
+.operator-btn:hover {
+    background-color: purple;
+}
+
+* {
+    color: white;
+}
+
+.color-control {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.color-control button {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#current-mode {
+    background-color:orchid;
+}
+
+#dark-mode {
+    background-color:rgb(31, 31, 31);
+    border-color: white;
+}
+
+#current-mode:hover {
+    cursor: pointer;
+    background-color: rgb(73, 2, 73);
+}
+
+#dark-mode:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+#light-mode {
+    color: black;
+}
+
+#light-mode:hover {
+    cursor: pointer;
+    background-color: #D1D1D1;
+}
+
+* {
+    transition: background-color 0.8s ease, color 0.8s ease-out;
+}
