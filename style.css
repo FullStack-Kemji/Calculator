@@ -118,12 +118,13 @@ body {
 
 #blue-mode {
     background-color: blue;
+    cursor: pointer;
 }   
 
 #blue-mode:hover {
     background-color: darkblue;
-    cursor: pointer;
 }
+
 
 
 
