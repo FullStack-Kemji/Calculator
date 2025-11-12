@@ -46,10 +46,12 @@ function calculate() {
 
             btn.addEventListener("mouseenter", () => {
                 btn.style.color = "#1A1A1A"
+                btn.style.backgroundColor = "black"
             })
 
             btn.addEventListener("mouseleave", () => {
                 btn.style.color = "white"
+                btn.style.backgroundColor = "black"
             })
 
 
@@ -91,6 +93,7 @@ function lightMode() {
 
             btn.addEventListener("mouseleave", () => {
                 btn.style.backgroundColor = "white"
+                btn.style.color = "black"
             })
 
         } else {
@@ -125,10 +128,12 @@ function blueMode() {
 
             btn.addEventListener("mouseenter", () => {
                 btn.style.backgroundColor = "#0F1B33"
+                btn.style.color = "#E6F0FF"
             }) 
 
             btn.addEventListener("mouseleave", () => {
                 btn.style.backgroundColor = "#112240"
+                btn.style.color = "#E6F0FF"
             })
 
         } else {
@@ -137,6 +142,7 @@ function blueMode() {
 
             btn.addEventListener("mouseenter", () => {
                 btn.style.backgroundColor = "#1B3A7C"
+                btn.style.color = "#E6F0FF"
             }) 
 
             btn.addEventListener("mouseleave", () => {
@@ -168,21 +174,40 @@ function blueMode() {
 
     // Buttons
     button.forEach(btn => {
+
+        btn.addEventListener("onmousedown", () => {
+            btn.style.backgroundColor = "#E6CCFF"
+        })
+
+
         if (btn.classList.contains("operator-btn")) {
+
             btn.style.backgroundColor = "darkorchid";
-            btn.style.color = "orchid";
+            btn.style.color = "pink";
 
-            // Hover effect
-            btn.onmouseenter = () => btn.style.backgroundColor = "purple";
-            btn.onmouseleave = () => btn.style.backgroundColor = "darkorchid";
+            btn.addEventListener("mouseenter", () => {
+                btn.style.backgroundColor = "purple";
+                btn.style.color = "pink";
+            })
 
-        } else {
+            btn.addEventListener("mouseleave", () => {
+                btn.style.backgroundColor = "darkorchid"
+                btn.style.color = "pink"
+            })
+
+        } else{
             btn.style.backgroundColor = "orchid";
             btn.style.color = "pink";
 
-            // Hover effect
-            btn.onmouseenter = () => btn.style.backgroundColor = "darkorchid";
-            btn.onmouseleave = () => btn.style.backgroundColor = "orchid";
+            btn.addEventListener("mouseenter", () => {
+                btn.style.backgroundColor = "darkorchid";
+            })
+
+            btn.addEventListener("mouseleave", () => {
+                btn.style.backgroundColor = "orchid"
+                btn.style.color = "pink"
+            })
+
         }
-    });
+})
 }
