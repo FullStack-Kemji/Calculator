@@ -122,7 +122,9 @@ body {
 
 #blue-mode:hover {
     background-color: darkblue;
+    cursor: pointer;
 }
+
 
 
 
