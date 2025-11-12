@@ -10,7 +10,7 @@ body {
     background-color: rgb(73, 2, 73);
     overflow: hidden;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 500px;  /* its here */
 }
 
 #keys {
@@ -75,7 +75,7 @@ body {
 .color-control {
     display: flex;
     padding: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .color-control button {
@@ -85,13 +85,12 @@ body {
 
 #current-mode {
     background-color:orchid;
-    border-color: darkorchid;
+    border-color: black;
 }
 
 #dark-mode {
     background-color:rgb(31, 31, 31);
     border-color: white;
-    
 }
 
 #current-mode:hover {
@@ -106,7 +105,6 @@ body {
 
 #light-mode {
     color: black;
-    border-color: black;
 }
 
 #light-mode:hover {
@@ -115,6 +113,17 @@ body {
 }
 
 * {
-    transition: background-color 0.8s ease, color 0.8s ease-out;
+    transition: background-color 0.7s ease, color 0.3s ease-out;
 }
+
+#blue-mode {
+    background-color: blue;
+    border-color: white;
+}   
+
+#blue-mode:hover {
+    background-color: darkblue;
+}
+
+
 
