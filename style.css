@@ -118,15 +118,45 @@ body {
 
 #blue-mode {
     background-color: blue;
-    cursor: pointer;
+    border-color: white;
 }   
 
 #blue-mode:hover {
     background-color: darkblue;
+    cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+    .calculator {
+        max-width: 95%;
+    }
 
+    #display {
+        padding: 20px;
+        font-size: 2.2rem;
+    }
 
+    #keys {
+        gap: 8px;
+        padding: 15px;
+    }
 
+    #keys button:not(.operator-btn),
+    .operator-btn {
+        width: 70px;  
+        height: 70px;
+        font-size: 1.5rem;
+    }
+
+    .color-control {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .color-control button {
+        padding: 15px;
+    }
+}
 
 
